@@ -12,6 +12,31 @@ import java.util.Scanner;
 final class Salary {
 
     /**.
+     * Set YEAR_1 int constant to 1
+     */
+    public static final int YEAR_1 = 1;
+
+    /**.
+     * Set YEAR_2 int constant to 2
+     */
+    public static final int YEAR_2 = 2;
+
+    /**.
+     * Set YEAR_3 int constant to 3
+     */
+    public static final int YEAR_3 = 3;
+
+    /**.
+     * Set YEAR_4 int constant to 4
+     */
+    public static final int YEAR_4 = 4;
+
+    /**.
+     * Set YEAR_5 int constant to 5
+     */
+    public static final int YEAR_5 = 5;
+
+    /**.
      * Set MAX_YEARS int constant to 90
      */
     public static final int MAX_YEARS = 90;
@@ -169,27 +194,27 @@ final class Salary {
         // Learnt switch statements in java
         // from https://www.w3schools.com/java/java_switch.asp
         switch (userYearsInt) {
-            case 1:
+            case YEAR_1:
                 // No bonus for less than 6 years
                 bonusTotal = 0;
                 salaryTotal = userSalaryDouble;
                 break;
-            case 2:
+            case YEAR_2:
                 // No bonus for less than 6 years
                 bonusTotal = 0;
                 salaryTotal = userSalaryDouble;
                 break;
-            case 3:
+            case YEAR_3:
                 // No bonus for less than 6 years
                 bonusTotal = 0;
                 salaryTotal = userSalaryDouble;
                 break;
-            case 4:
+            case YEAR_4:
                 // No bonus for less than 6 years
                 bonusTotal = 0;
                 salaryTotal = userSalaryDouble;
                 break;
-            case 5:
+            case YEAR_5:
                 // No bonus for less than 6 years
                 bonusTotal = 0;
                 salaryTotal = userSalaryDouble;
