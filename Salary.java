@@ -12,6 +12,11 @@ import java.util.Scanner;
 final class Salary {
 
     /**.
+     * Set MAX_YEARS int constant to 90
+     */
+    public static final double MAX_YEARS = 90;
+
+    /**.
      * Set BONUS double constant to 5%
      */
     public static final double BONUS = 0.05;
@@ -74,7 +79,7 @@ final class Salary {
         } while (userSalaryDouble <= 0);
 
         // While loop for valid number of years worked is entered
-        while (userYearsInt <= 0 || userYearsInt > 90) {
+        while (userYearsInt <= 0 || userYearsInt > MAX_YEARS) {
             // Message for user to enter years worked
             System.out.println("Please enter the number "
                 + "of years you have worked: ");
@@ -89,7 +94,7 @@ final class Salary {
 
                 // Check if years worked is
                 // Less than or equal to 0
-                if (userYearsInt <= 0 || userYearsInt > 90) {
+                if (userYearsInt <= 0 || userYearsInt > MAX_YEARS) {
                     // Display error message when years worked
                     // Is less than or equal to 0 or greater than 90
                     System.out.println("Invalid input: " + userYearsString
