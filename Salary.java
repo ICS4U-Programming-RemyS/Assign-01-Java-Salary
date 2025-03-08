@@ -124,20 +124,20 @@ final class Salary {
 
                 // Check if years worked is
                 // Less than or equal to 0
-                if (userYearsInt <= 0 || userYearsInt > MAX_YEARS) {
+                if (userYearsInt <= 0 || userYearsInt >= MAX_YEARS) {
                     // Display error message when years worked
                     // Is less than or equal to 0 or greater than 90
                     System.out.println("Invalid input: " + userYearsString
-                            + ". Please enter a number of years "
-                            + "greater than 0 and less than 90.");
+                            + ". Please enter number of years "
+                            + "greater than 0 and less than or equal to 90.");
                 }
 
             } catch (NumberFormatException error) {
                 // Display error message when input
                 // Is not a number or is a decimal
                 System.out.println("Invalid input: " + userYearsString
-                        + ". Please enter a number of "
-                        + "years greater than 0 and less than 90.");
+                        + ". Please enter number of "
+                        + "years greater than 0 and less than or equal to 90.");
             }
         }
 
