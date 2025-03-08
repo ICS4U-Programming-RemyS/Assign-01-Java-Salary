@@ -14,12 +14,17 @@ final class Salary {
     /**.
      * Set MAX_YEARS int constant to 90
      */
-    public static final double MAX_YEARS = 90;
+    public static final int MAX_YEARS = 90;
 
     /**.
      * Set BONUS double constant to 5%
      */
     public static final double BONUS = 0.05;
+
+    /**.
+     * Set BONUS_YEARS int constant to 5
+     */
+    public static final int BONUS_YEARS = 5;
 
     /**
     * This is a private constructor used to satisfy the style checker.
@@ -123,7 +128,7 @@ final class Salary {
         double salaryTotal = resultsDoubleArray[1];
 
         // Display results based on number of years worked
-        if (userYearsInt > 5) {
+        if (userYearsInt > BONUS_YEARS) {
             // Display bonus and salary
             System.out.print("The bonus amount after "
             + userYearsInt + " years is ");
